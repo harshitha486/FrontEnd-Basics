@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        p{
+            color: rgb(218, 181, 60);
+        }
+        /* Class Selector */
+        .red{
+            color: red;
+        }
+        /* ID Selector */
+        #b{
+            background-color: #45cc10;
+        }
+        /* Child Selector */
+        div > p{
+            color: rgb(19, 38, 209);
+        }
+        /* Descendant Selector */
+        div div{
+            color: rgb(15, 235, 161);
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        a:visited{
+            color: rgb(185, 221, 26);
+        }
+        a:link{
+            color: #45cc10;
+        }
+        a:active{
+            background-color: black;
+        }
+        a:hover{
+            background-color: purple;
+        }
+        p:first-child{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Bunny
+    </p>
+    <div class="red" id="b">
+        Bunny
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, eius.</p>
+    </div>
+
+    <div>
+        <article>
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi perspiciatis, praesentium corrupti cupiditate modi maxime commodi ducimus fuga laudantium sint!
+            </div>
+        </article>
+    </div>
+
+    <a href="https://www.youtube.com">youtube</a>
+    <a href="www.fb.com">facebook</a>
+
+    <main>
+        <p>first</p>
+        <p>second</p>
+    </main>
+</body>
+</html>
