@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows & Outlines</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 80vw;
+            box-shadow: 5px 5px 10px 5px red;
+            /* box-shadow: 5px 5px 10px 5px red inset; */
+            /* box-sizing: h-offset v-offset blur spread color ; */
+        }
+        .text{
+            text-shadow: 5px 5px 10px rgb(32, 3, 7);
+            /* no spread in text-shadow */
+        }
+        .cont{
+            border: 2px solid black;
+            width: 80vw;
+            outline: 2px solid red;
+            border-radius: 30px;
+            outline-offset: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        this is a box
+    </div>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam assumenda, autem mollitia at iure, consequuntur sit nemo minima iusto natus aperiam maiores?
+    </div>
+    <div class="cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate quo cupiditate nesciunt ducimus, earum corrupti possimus minima facilis veniam exercitationem? Iusto, at itaque quam obcaecati vel non aliquam est?</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: #6b0f0f;
+        }
+        .box::first-line{
+            color: purple;
+        } */
+        /* .boxes *{
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .boxes::after{
+            content: "hey hello";
+        }
+        .boxes::before{
+            content: "Hey i'm";
+        }
+        .box:nth-child(even){
+            color: blue;
+        }
+        .box:nth-child(odd){
+            background-color: blueviolet;
+        }
+        .box:nth-last-child(1){
+            color: brown;
+        } */
+        ::selection{
+            background-color: peru;
+            color: aqua;
+        }
+        .box::first-letter{
+            color: rgb(4, 129, 88);
+            font-size: 30px;
+        }
+        input::placeholder{
+            color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non quaerat ipsa quod, harum reiciendis sed minima id, et, aspernatur voluptates reprehenderit inventore. Porro illo facere reprehenderit neque odio, quisquam ratione veniam saepe eos explicabo culpa quia sed temporibus reiciendis. Neque, repellat omnis.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, autem.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, labore.</div>
+    </div>
+
+    <input type="text" placeholder="enter your name">
+</body>
+</html>

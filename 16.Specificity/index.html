@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* since class selector > element selector yellow color applied */
+        .yellow{
+            color: yellow;
+        }
+        h1{
+            color: red;
+        }
+
+        /* div gets 1 point since it is element selector where as .pink gets 10 since it is class selector so overall 11 */
+        div.pink{
+            color: rgb(37, 8, 107);
+        }
+
+        /* important can override inline selector */
+        .pink{
+            color: rgb(199, 60, 83) !important;
+        }
+
+
+        /*Attribute Selector*/
+        [data-x='a']{
+            background-color: maroon;
+        }
+
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+        a.harryclass.rohan-class[href]:hover {
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="red yellow blue">
+        CSS Specificity
+    </h1>
+    <div class="pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, a.</div>
+    <div>Inline > Id Selector > Class or Attribute Selector > Element Selector > Universal Selector</div>
+    <ul>
+        <li>Universal - 0</li>
+        <li>Element - 1</li>
+        <li>Class or Attribute - 10</li>
+        <li>Id - 100</li>
+        <li>Inline - 1000</li>
+    </ul>
+    <div data-x="a" > Lorem ipsum dolor sit amet.</div>
+</body>
+</html>
