@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container red bg-greem" style="display: flex"; data-createdby="Harshi" >
+        <div class="box">
+            this is a box
+        </div>
+
+    </div>
+    <script>
+            // let div = document.createElement("div");
+            // div.innerHTML = "I have been inserted <b>by harshi</b>"
+            // div.setAttribute("class", "created");
+            // document.querySelector(".container").before(div);
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("beforebegin", "<b> I am beforee</b>")
+    </script>
+</body>
+</html>
