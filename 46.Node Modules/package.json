@@ -1,0 +1,20 @@
+{
+  "name": "46.node-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.intro.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "loadash": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
