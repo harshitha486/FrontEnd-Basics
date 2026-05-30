@@ -1,6 +1,6 @@
-# Web-Development-Basics
+# Frontendf-Basics
 
-A beginner-friendly repository for learning and practicing core web development concepts using HTML, CSS, and JavaScript.
+A beginner-friendly repository for learning and practicing core frontend concepts using HTML, CSS, and JavaScript.
 
 ## Topics Covered
 - HTML Basics
