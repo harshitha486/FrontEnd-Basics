@@ -14,7 +14,7 @@ readFile('./content/first.txt', 'utf8', (err, data) => {
   const second = data;
   writeFile(
     './content/result.txt' ,
-    `here is the result ${first}, ${second}`,
+    `here is the resulttt ${first}, ${second}`,
     (err, data) => {
     if (err){
         console.log(err);
