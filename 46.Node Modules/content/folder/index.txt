@@ -1,1 +1,0 @@
-i'm inside the index context folder
